@@ -53,3 +53,22 @@ tfjs@4.9.0
 
 > node index.js
 
+10) git bash commands to upload project to github response
+
+$ echo "# app_iris_tfjs" >> README.md
+$ git init
+$ git remote add origin https://github.com/HoltechHard/app_iris_tfjs.git
+$ git add README.md
+$ git commit -m "first commit"
+$ git add init_commands.txt
+$ git commit -m "basic commands"
+$ git add dataset/*
+$ git commit -m "dataset"
+$ git add static/*
+$ git commit -m "static files"
+$ git add templates/*
+$ git commit -m "frontend templates"
+$ git add index.js package-lock.json package.json
+$ git commit -m "nodejs backend files"
+$ git push origin master
+
