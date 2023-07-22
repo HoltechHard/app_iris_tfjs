@@ -1,0 +1,55 @@
+=============================================
+|       IRIS APP WITH NODE.JS + TF.JS       |
+=============================================
+
+1) Architecture of the project
+
+
+                            --------------       train API invoke / response
+---------------             |            |             <===>
+|   dataset   |     ==>     |   NodeJs   |                       -----------
+---------------             |   server   |                       |  client |  
+                            |            |                       -----------
+                 load       --------------             <===>
+                 data                           predict API invoke / response
+
+
+before to begin the project development, need to install node.js
+
+2) Version of packages in the project
+
+> node -v
+node v10.24.1
+
+> npm -v 
+npm v6.14.12
+
+3) initiate the package manager of the project
+
+> npm init -y
+
+4) add express module to create the server 
+
+> npm install express --save
+
+5) install tf.js module
+
+> npm install @tensorflow/tfjs --save
+
+6) check the installed version of tfjs
+
+> npm list @tensorflow/tfjs version
+tfjs@4.9.0
+
+7) install body-parser to manage Ajax POST requests
+
+> npm install body-parser --save
+
+8) install jquery
+
+> npm install jquery
+
+9) run the application in NodeJs server
+
+> node index.js
+
