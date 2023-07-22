@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iris classification</title>      
+</head>
+<body>
+    <h1>Tf.js in Iris Classification</h1> <hr>
+    <p>
+        First, train the model. After that, fill the text-boxes and make prediction
+    </p>
+    <button id="btnTrain">Train</button> <hr> <br>
+    <label for="sepalLength">Sepal length: &nbsp; </label>
+    <input type="number" id="sepalLength" value="1" /> <br>
+    <label for="sepalWidth">Sepal width: &nbsp; </label>
+    <input type="number" id="sepalWidth" value="1" /> <br>
+    <label for="petalLength">Petal length: &nbsp; </label>
+    <input type="number" id="petalLength" value="1" /> <br>
+    <label for="petalWidth">Petal width: &nbsp;</label>
+    <input type="number" id="petalWidth" value="1" /> <br> <br>
+    <button id="btnSend" disabled="true">Predict</button> <br>
+    <h3>Result: <span id="result"></span> </h3>    
+    <h3>Probability: <span id="prob"></span></h3>
+    
+    <!-- adding javascript files -->
+    <script type="text/javascript" src="http://localhost:3000/static/js/jquery-3.7.0.min.js"></script>  
+    <script type="text/javascript" src="http://localhost:3000/static/js/functions.js"></script>
+</body>
+</html>
+
