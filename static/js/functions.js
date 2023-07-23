@@ -1,5 +1,5 @@
 $('#btnTrain').click(function(){
-    $('#btnTrain').prop('disabled', true);
+    $('#btnTrain').prop('disabled', true);    
     $('#btnTrain').empty().append('Training ...');
 
     $.ajax({
@@ -8,7 +8,11 @@ $('#btnTrain').click(function(){
         success: function(result){
             console.log(result);
             $('#btnSend').prop('disabled', false);
-            $('#btnTrain').empty().append('Trained');            
+            $('#btnTrain').empty().append('Trained');
+            $('#sepalLength').prop('disabled', false);
+            $('#sepalWidth').prop('disabled', false);
+            $('#petalLength').prop('disabled', false);
+            $('#petalWidth').prop('disabled', false);
         }
     });
 });
