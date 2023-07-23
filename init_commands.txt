@@ -53,7 +53,7 @@ tfjs@4.9.0
 
 > node index.js
 
-10) git bash commands to upload project to github response
+10) git bash commands to upload project to github repo
 
 $ echo "# app_iris_tfjs" >> README.md
 $ git init
@@ -72,3 +72,13 @@ $ git add index.js package-lock.json package.json
 $ git commit -m "nodejs backend files"
 $ git push origin master
 
+11) git bash commands to update files in github repo
+
+$ git add templates/index.html
+$ git commit "updated frontend templates"
+$ git add static/js/functions.js
+$ git commit -m "updated static files"
+$ git add init_commands.txt
+$ git commit -m "updated basic commands"
+$ git pull origin master
+$ git push origin master
